@@ -10,6 +10,9 @@ This document is meant to hold notes related to project planning.
 
 The game will be a space-themed scrolling shmup, like what was popular on SNES and Genesis in the 90s.
 
+**Other ideas for general game-wide themes:**
+- (none yet)
+
 
 ---
 
