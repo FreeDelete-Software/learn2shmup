@@ -1,11 +1,14 @@
 extends KinematicBody2D
 
+signal shoot(Bullet, location)
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 
 var speed = 420
+
+var _bullet = preload("res://bullet/bullet.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -27,3 +30,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_right"):
 		velocity.x += 1
 	move_and_slide(velocity * speed)
+	
+	if Input.is_action_just_pressed("ui_select"):
+		emit_signal("shoot", _bullet, self.position)
+
