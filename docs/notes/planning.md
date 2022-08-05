@@ -58,6 +58,7 @@ The background and obstacles
     - [ ] Others?
   - [X] Movement coding
   - [X] Projectiles
+  - [ ] Heads-up Display
   - [ ] Camera? (For scrolling)
 - [ ] Enemies
   - [ ] Spawning and/or Placing
@@ -74,7 +75,13 @@ The background and obstacles
     - [ ] Sprite
     - [ ] Movement
     - [ ] Attack pattern
-  - [ ] Bosses (3?)
+  - [ ] Boss 1
+    - [ ] Boss Sprites
+    - [ ] Boss coding
+  - [ ] Boss 2
+    - [ ] Boss Sprites
+    - [ ] Boss coding
+  - [ ] Boss 3
     - [ ] Boss Sprites
     - [ ] Boss coding
 - [ ] Maps/Levels
