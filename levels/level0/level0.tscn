@@ -1,12 +1,16 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://levels/level0/level0.gd" type="Script" id=2]
+[ext_resource path="res://Enemy/enemy.tscn" type="PackedScene" id=3]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
 position = Vector2( 469, 257 )
+
+[node name="enemy" parent="." instance=ExtResource( 3 )]
+position = Vector2( 964, 260 )
 
 [connection signal="shoot" from="KinematicBody2D" to="." method="_on_Player_shoot"]
