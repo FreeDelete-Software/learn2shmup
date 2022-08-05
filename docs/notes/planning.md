@@ -10,7 +10,7 @@ This document is meant to hold notes related to project planning.
 
 The game will be a space-themed scrolling shmup, like what was popular on SNES and Genesis in the 90s.
 
-**Other ideas for general game-wide themes:**
+**Ideas for general game-wide themes:**
 - (none yet)
 
 
@@ -50,23 +50,35 @@ The background and obstacles
 
 ## List of planned work
 
-- Player
-  - Ship Sprite
-  - Properties
-    - Health
-    - Powerups
-    - Others?
-  - Movement coding
-  - Projectiles
-  - Camera
-- Enemies
-  - Basic Enemy Sprites (unknown number)
-  - Simple AI
-  - Spawning
-  - Enemy Projectiles
-  - Bosses (3?)
-    - Artwork
-    - Special coding
-- Maps
-  - Artwork for parallax scrolling
-  - Basic obstacles
+- [ ] Player
+  - [X] Ship Sprite
+  - [ ] Properties
+    - [ ] Health
+    - [ ] Powerups
+    - [ ] Others?
+  - [X] Movement coding
+  - [X] Projectiles
+  - [ ] Camera? (For scrolling)
+- [ ] Enemies
+  - [ ] Spawning and/or Placing
+  - [ ] Basic Enemy
+    - [X] Sprite
+    - [X] Simple Movement
+    - [ ] Simple Attack pattern
+    - [X] Collisions
+  - [ ] Special Enemy 1
+    - [ ] Sprite
+    - [ ] Movement
+    - [ ] Attack pattern
+  - [ ] Special Enemy 2
+    - [ ] Sprite
+    - [ ] Movement
+    - [ ] Attack pattern
+  - [ ] Bosses (3?)
+    - [ ] Boss Sprites
+    - [ ] Boss coding
+- [ ] Maps/Levels
+  - [ ] Parallax Scrolling
+    - [ ] Background Artwork
+  - [ ] Basic obstacles
+    - [ ] Obstacle Tileset(s)
