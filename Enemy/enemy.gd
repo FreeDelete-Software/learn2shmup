@@ -23,7 +23,10 @@ func _ready():
 func _physics_process(delta):
 	var velocity = Vector2.ZERO
 	velocity.x -= 1
-	move_and_slide(velocity * speed)
+	var collision = move_and_collide(velocity * delta)
+	if collision:
+		collision.collider.queue_free()
+		queue_free()
 	
-	
+
 #		emit_signal("shoot", _bullet, self.position)

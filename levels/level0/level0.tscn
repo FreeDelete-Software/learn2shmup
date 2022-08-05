@@ -14,3 +14,4 @@ position = Vector2( 469, 257 )
 position = Vector2( 964, 260 )
 
 [connection signal="shoot" from="KinematicBody2D" to="." method="_on_Player_shoot"]
+[connection signal="body_entered" from="enemy" to="." method="_on_enemy_body_entered"]
