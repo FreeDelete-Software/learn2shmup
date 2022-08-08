@@ -3,15 +3,58 @@
 This document is meant to hold notes related to project planning.
 
 
----
-
-
 ## General Concept
 
-The game will be a space-themed scrolling shmup, like what was popular on SNES and Genesis in the 90s.
+The game will be a space-themed scrolling shmup, like what was popular on SNES
+and Genesis in the 90s.
 
 **Ideas for general game-wide themes:**
 - (none yet)
+
+
+---
+
+
+## Versioning scheme
+
+The versioning for the project will use a fairly simple scheme:
+
+```
+(major).(minor).(patch)
+```
+
+
+### major
+
+The `major` version indicates a major release. Versions `0.x` indicate an
+incomplete alpha/beta version.
+
+Version `1.0.0` will indicate that all project goals have been achieved and the
+codebase is generally stable. From that point, the project will be considered
+complete and in "maintenance status" with `1.x` updates being largely bug
+fixing patches and community driven features without preconceived plans from
+the core development team. If no community grows around the 1.0.0 release, then
+this project will be abandoned and clearly marked as inactive.
+
+There are currently no plans for any `2.x` releases.
+
+
+### minor
+
+The `minor` version indicates two things:
+
+  1. *Development Milestones* - Typically, this is either an individual feature or a collection of small interrelated features that are planned for the project.
+  2. *Stability status* - Odd numbers indicate an incomplete and potentially unstable version, and even numbers represent a completed and stable version for a particular milestone. For example:
+    - Version number `0.1.0` is the first development version.
+    - Once its development milestone goals are met, it will be merged into the **main** branch for the repo and its version number will be changed to `0.2.0`.
+    - When development starts on the next milestone, the `0.2.x` version increase(s) and any patches to it will be merged into the **devel** branch and updated once more to `0.3.0` before any of its planned changes are implemented.
+
+
+### patch
+
+The `patch` version indicates smaller changes that are applied to a particular
+`minor` version. Generally, they are either bug-fixes to the **main** branch or
+pull requests that were merged into the **devel** branch.
 
 
 ---
