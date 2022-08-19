@@ -16,10 +16,10 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(_delta):
+	pass
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var velocity = Vector2.ZERO
 	if Input.is_action_pressed("ui_up"):
 		velocity.y -= 1
@@ -29,8 +29,10 @@ func _physics_process(delta):
 		velocity.x -= 1
 	if Input.is_action_pressed("ui_right"):
 		velocity.x += 1
-	move_and_slide(velocity * speed)
+	velocity = velocity.normalized() * speed
+	var _player_slide = move_and_slide(velocity)
 	
 	if Input.is_action_just_pressed("ui_select"):
-		emit_signal("shoot", _bullet, self.position)
-
+		var bullet_pos = self.position
+		bullet_pos.x += 33
+		emit_signal("shoot", _bullet, bullet_pos)
