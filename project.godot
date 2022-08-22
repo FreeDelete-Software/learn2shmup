@@ -30,6 +30,10 @@ config/name="learn2shmup"
 run/main_scene="res://levels/level0/level0.tscn"
 config/icon="res://icon.png"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/gut/plugin.cfg" )
+
 [physics]
 
 common/enable_pause_aware_picking=true
