@@ -7,7 +7,7 @@ extends KinematicBody2D
 # var a = 2
 # var b = "text"
 
-var speed = 50
+var speed = 5
 
 #var _bullet = preload("res://bullet/bullet.tscn")
 # Declare member variables here. Examples:
@@ -20,10 +20,10 @@ func _on_VisibilityNotifier2D_screen_exited():
 func _ready():
 	pass # Replace with function body.
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var velocity = Vector2.ZERO
 	velocity.x -= 1
-	var collision = move_and_collide(velocity * delta)
+	var collision = move_and_collide(velocity * speed)
 	if collision:
 		collision.collider.queue_free()
 		queue_free()
