@@ -1,15 +1,13 @@
 # Notes for the learn2shmup modding system
 
-All notes for reasearch and planning of the modding system for L2S.
-
+All notes for research and planning of the modding system for L2S.
 
 ## Background
 
 The initial idea for the learn2shmup project started as a very simple game for
 the devs to learn more about Godot. However, the project can help others learn
-by becomming a modding framework for making shmup games in Godot. Somewhere 
+by becoming a modding framework for making shmup games in Godot. Somewhere
 between "Mario Maker" and "Gary's Mod" for 2D shmups is the general concept.
-
 
 ### Ideas
 
@@ -20,6 +18,7 @@ between "Mario Maker" and "Gary's Mod" for 2D shmups is the general concept.
   * User-defined settings, properties, and launching profiles
   * Nexus Mods site integration? (mostly for checking updates)
 * Create editor addon(s) to assist mod development
+
 
 
 ## Planning
@@ -51,6 +50,43 @@ between "Mario Maker" and "Gary's Mod" for 2D shmups is the general concept.
   * What is possible simply by defining a "mod profile"?
 
 
+### Core components
+
+#### Level
+
+(placeholder)
+
+#### Spawner
+
+(placeholder)
+
+#### Player
+
+(placeholder)
+
+#### Bullet
+
+(placeholder)
+
+#### Power-up
+
+(placeholder)
+
+#### Obstacle
+
+(placeholder)
+
+#### Enemy
+
+(placeholder)
+
+#### Boss
+
+(placeholder)
+
+
+
+
 ## Research
 
 Research notes and links to external docs related to the modding system go in this section.
@@ -59,9 +95,9 @@ Research notes and links to external docs related to the modding system go in th
 ### Existing addons
 
 There is already an addon for Godot that can handle mods called "Modular Godot"
-(Link 5). However, the integrated nature of mods for the project means a custom 
+(Link 5). However, the integrated nature of mods for the project means a custom
 system would make sense. It may be useful to reference that project for how
-they accomplished some things. If anything is copied (directly or indirectly) 
+they accomplished some things. If anything is copied (directly or indirectly)
 from that project, then proper attribution **must** be included with L2S.
 
 
