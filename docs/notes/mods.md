@@ -1,6 +1,9 @@
 # Notes for the learn2shmup modding system
 
-All notes for research and planning of the modding system for L2S.
+General notes for research and planning of the modding system.
+
+
+
 
 ## Background
 
@@ -21,68 +24,19 @@ between "Mario Maker" and "Gary's Mod" for 2D shmups is the general concept.
 
 
 
+
 ## Planning
 
 ### Diagram
 
 ![Initial Diagram](https://live.staticflickr.com/65535/52332519377_419a4825cc_b.jpg)
 
+### Technical Requirements for 0.1.x
 
-### Technical Requirements
-
-* Identify all core resources for framework
-  * Create "base typeclasses" for them
-  * Should these be provided as an editor addon?
-  * Decouple *everything*
-* Make all resource loading automatic and/or input-based
-* Define how framework orchestrates resources into a playable game.
-  * Packaging options?
-* Workflow(s), tools, and docs for mod development.
-  * Godot editor addon(s)
-  * API?
-  * DevKit?
-  * Sphinx doc engine?
-* Local mod awareness
-  * Full games list with at least one example game included.
-  * Customizable mod profiles and user settings
-* Determine boundries for mod manager customizability.
-  * Is in-game level editor possible? If so, is it worth doing?
-  * What is possible simply by defining a "mod profile"?
-
-
-### Core components
-
-#### Level
-
-(placeholder)
-
-#### Spawner
-
-(placeholder)
-
-#### Player
-
-(placeholder)
-
-#### Bullet
-
-(placeholder)
-
-#### Power-up
-
-(placeholder)
-
-#### Obstacle
-
-(placeholder)
-
-#### Enemy
-
-(placeholder)
-
-#### Boss
-
-(placeholder)
+* Well-defined file/folder structure
+* Custom addon to provide framework of basetype nodes
+* Game flow orchestration (BaseTypeNodes <--> Stages <--> `game.json`)
+* Mod Management System (install, identify, select, and load)
 
 
 
@@ -99,6 +53,23 @@ There is already an addon for Godot that can handle mods called "Modular Godot"
 system would make sense. It may be useful to reference that project for how
 they accomplished some things. If anything is copied (directly or indirectly)
 from that project, then proper attribution **must** be included with L2S.
+
+### Open Questions
+
+* How will the nodes be implemented in the addon?
+* How to properly decouple everything?
+* How exactly does the framework orchestrate resources into a playable game.
+  * Make all resource loading automatic and/or input-based
+* What workflow(s), tools, and docs should be made?
+  * Extra Modder tools?
+  * Packaging options?
+  * API?
+  * DevKit?
+  * Sphinx doc engine?
+* Local mod awareness
+  * Full games list with at least one example game included.
+  * Customizable mod profiles and user settings
+* Determine boundaries for customizability.
 
 
 ### Links
