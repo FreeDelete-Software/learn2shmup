@@ -67,6 +67,9 @@ After the start screen loads the first Stage, as defined in `GameData.json`, the
 Stages themselves take complete control over the orchestration based on the game
 data. This functionality will be provided by the addon via the ShmupStage node.
 
+Implementation of this system will be based off of the following tutorial:
+https://www.youtube.com/watch?v=XHbrKdsZrxY
+
 A Stage is created by making a new scene (eg. `MyScene.tscn`) using the
 ShmupStage node provided by the addon. From there you would set the map art, add
 obstacles and enemy spawners, and code any special functionality specific to
