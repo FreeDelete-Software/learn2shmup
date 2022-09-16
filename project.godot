@@ -18,10 +18,16 @@ _global_script_classes=[ {
 "class": "GutTest",
 "language": "GDScript",
 "path": "res://addons/gut/test.gd"
+}, {
+"base": "Position2D",
+"class": "ShmupSpawner",
+"language": "GDScript",
+"path": "res://addons/ShmupWorks/ShmupSpawner.gd"
 } ]
 _global_script_class_icons={
 "GutHookScript": "",
-"GutTest": ""
+"GutTest": "",
+"ShmupSpawner": "res://icon.png"
 }
 
 [application]

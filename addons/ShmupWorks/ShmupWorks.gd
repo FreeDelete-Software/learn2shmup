@@ -1,10 +1,11 @@
 tool
 extends EditorPlugin
 
+# Main script for ShmupWorks addon.
 
 func _enter_tree():
-	add_custom_type("ShmupBullet","KinematicBody2D",preload("ShmupBullet.gd"),preload("res://icon.png"))
+	pass
 
 
 func _exit_tree():
-	remove_custom_type("ShmupBullet")
+	pass
