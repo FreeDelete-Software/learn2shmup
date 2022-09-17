@@ -8,7 +8,7 @@ signal shoot(Bullet, location)
 
 var speed = 420
 
-var _bullet = preload("res://Bullet/Bullet.tscn")
+var _bullet = preload("res://bullet/bullet.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
