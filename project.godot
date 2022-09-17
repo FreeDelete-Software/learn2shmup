@@ -18,21 +18,27 @@ _global_script_classes=[ {
 "class": "GutTest",
 "language": "GDScript",
 "path": "res://addons/gut/test.gd"
+}, {
+"base": "Position2D",
+"class": "ShmupSpawner",
+"language": "GDScript",
+"path": "res://addons/ShmupWorks/ShmupSpawner.gd"
 } ]
 _global_script_class_icons={
 "GutHookScript": "",
-"GutTest": ""
+"GutTest": "",
+"ShmupSpawner": "res://icon.png"
 }
 
 [application]
 
 config/name="learn2shmup"
-run/main_scene="res://levels/level0/level0.tscn"
+run/main_scene="res://Stages/Stage0/Stage0.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/gut/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/ShmupWorks/plugin.cfg", "res://addons/gut/plugin.cfg" )
 
 [physics]
 

@@ -1,4 +1,5 @@
 extends Position2D
+class_name ShmupSpawner, "res://icon.png"
 
 signal spawned(spawn)
 
@@ -13,5 +14,3 @@ func spawn():
 	
 	emit_signal("spawned", spawnling)
 	return spawnling
-	
-	

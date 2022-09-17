@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/ShmupWorks/ShmupSpawner.gd" type="Script" id=1]
+[ext_resource path="res://Enemy/RngEnemySpawnTimer.gd" type="Script" id=2]
+[ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=3]
+
+[node name="RngEnemySpawner" type="Position2D"]
+script = ExtResource( 1 )
+spawnling_scene = ExtResource( 3 )
+
+[node name="RngEnemySpawnTimer" type="Timer" parent="."]
+autostart = true
+script = ExtResource( 2 )
+
+[connection signal="timeout" from="RngEnemySpawnTimer" to="RngEnemySpawnTimer" method="_on_timeout"]
